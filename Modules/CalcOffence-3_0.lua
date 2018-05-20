@@ -1240,8 +1240,8 @@ function calcs.offence(env, actor)
 
 	skillFlags.bleed = false
 	skillFlags.poison = false
-	skillFlags.ignite = false
-	skillFlags.igniteCanStack = modDB:Sum("FLAG", skillCfg, "IgniteCanStack")
+	skillFlags.= false
+	skillFlags.CanStack = modDB:Sum("FLAG", skillCfg, "IgniteCanStack")
 	skillFlags.shock = false
 	skillFlags.freeze = false
 	for _, pass in ipairs(passList) do
@@ -1638,6 +1638,7 @@ function calcs.offence(env, actor)
 
 		-- Calculate ignite chance and damage
 		if canDeal.Fire and (output.IgniteChanceOnHit + output.IgniteChanceOnCrit) > 0 then
+			output.IgniteChance = 100 --ABC edited ignite 'fix'
 			if not mainSkill.igniteCfg then
 				mainSkill.igniteCfg = {
 					skillName = skillCfg.skillName,
