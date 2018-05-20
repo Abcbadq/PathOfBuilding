@@ -1240,7 +1240,7 @@ function calcs.offence(env, actor)
 
 	skillFlags.bleed = false
 	skillFlags.poison = false
-	skillFlags.= false
+	skillFlags.ignite= false
 	skillFlags.CanStack = modDB:Sum("FLAG", skillCfg, "IgniteCanStack")
 	skillFlags.shock = false
 	skillFlags.freeze = false
