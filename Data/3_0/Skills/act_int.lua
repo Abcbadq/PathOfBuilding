@@ -3471,11 +3471,11 @@ skills["newIncinerate"] = {
 		mod("Damage", "MORE", 25, 0, KeywordFlag.Ailment, { type = "Multiplier", var = "IncinerateStage" }),
 		--"is_area_damage" = ?
 		--"base_skill_show_average_damage_instead_of_dps" = ?
-		mod("Multiplier:IncinerateStage", "BASE", 8, 0, 0, { type = "SkillPart", skillPart = 2 }), 
+		mod("Multiplier:IncinerateStage", "BASE", 7, 0, 0, { type = "SkillPart", skillPart = 2 }), 
 		--skill("dpsMultiplier", 0.1, { type = "SkillPart", skillPart = 2 }),
 		mod("EnemyIgniteChance" , "BASE" , 100 , 0 , 0 , { type = "SkillPart", skillPart = 3 }),
-		mod("Damage", "MORE", 1000, 0, bit.bor(KeywordFlag.Ailment), { type = "SkillPart", skillPart = 3 }), 
-		mod("Damage", "MORE", 260, 0, bit.bor(KeywordFlag.Hit), { type = "SkillPart", skillPart = 3 }), 
+		mod("Damage", "MORE", 1550, 0, bit.bor(KeywordFlag.Ailment), { type = "SkillPart", skillPart = 3 }), 
+		mod("Damage", "MORE", 250, 0, bit.bor(KeywordFlag.Hit), { type = "SkillPart", skillPart = 3 }), 
 	},
 	qualityMods = {
 		mod("FireDamage", "INC", 1, ModFlag.Fire, 0, nil),
